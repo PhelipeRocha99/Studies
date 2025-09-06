@@ -1,4 +1,11 @@
-# 📚 Studies (Created on 📅 6 setember 2025)
+# 📚 Studies (Created on 📅 6 september 2025)
+author: Phelipe Rocha B. Conceicao
+begin date: "6 september 2025"
+end date: 
+message: "You will know the truth, and the truth will set you free." (<a href=https://www.vatican.va/archive/ENG0839/__PXG.HTM>John 8:32</a>).</br>
+ST. EXPEDITUS PRAY FOR US.</br>
+<img src=images\Expeditus.jpg>
+---
 
 This repository was created to store and organize files related to my studies. Here you'll find a variety of materials, such as:
 
