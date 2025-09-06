@@ -9,13 +9,14 @@ This repository was created to store and organize files related to my studies. H
 
 ## 🎓 Background
 
-I have already developed some systems with a certain level of complexity using PHP and SQL (a website used to monitoring backup routine), but I feel that my programming base needs to be better developed. 
+I have already developed some systems with a certain level of complexity using PHP,Bootstrap, Codeigniter and mySQL (a website used to monitoring backup routine), but I feel that my programming base needs to be better developed. 
 Therefore, here I will document the process of building a solid and strutuctured knowledge base. This repository will document everything on this process.
 
 ## 🎯 Main Goals
 - Improve programming logic and algorithms
 - Study data structures and computational complexity
-- Develop practical projects with PHP and Java
+- Develop practical projects with PHP
+- Develop pratical projects with Java
 
 ### CS50 Specific Goals 
 - WEEK 0 - <a href=https://learning.edx.org/course/course-v1:HarvardX+CS50+X/block-v1:HarvardX+CS50+X+type@sequential+block@41335074798c4a65ac8d3fbdd31f5a49/>Scratch</a> ✅
