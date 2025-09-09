@@ -36,7 +36,7 @@ Variable naming best practices
 */
 
 // JS - let it's to declare variable on javascript, to numbers we do not use quotation Mark so JS can interpert the value as a number and not as a text.
-let secretNumber = 5;
+let secretNumber = parseInt(Math.random() * 100 + 1);
 
 //JS - prompt it's use to receive information from user.
 let guess;
@@ -45,12 +45,12 @@ let score = 1;
 //at this point i start to use live server extension - to update automatic index.html
 
 while (guess != secretNumber) {
-    guess = prompt("Choose a number from 1 to 10");
+    guess = prompt("Choose a number from 1 to 100");
     // JS - IF ELSE structue on JS is If(condition){action} Else if(condition){action} else(condition){action}
     if (guess == secretNumber) {
-        //JS - to find out log, in your browse right click on screen and then click on inspect, a tab open on right side of screen click on Console Tab to view message.
-        //JS- Template Strings use `Text go here ${variable} text text and more text` to use variable in text. 
-        alert(`Thats it! You find the secret number ${secretNumber}, in ${score} tries`);
+        //JS- This break stop the while loop
+        break;
+         
     } else{
         if (guess > secretNumber) {
             alert(`The secret number its LOWER than ${guess}`);      
@@ -60,3 +60,14 @@ while (guess != secretNumber) {
         score++;
     }
 }
+//JS - ternary operator use to evaluate a condition in only one line.
+let attemptWord = score > 1 ? 'attempts' : 'attempt';
+alert(`Thats it! You find the secret number ${secretNumber}, in ${score} ${attemptWord}`);
+
+/*
+    if (score > 1) {
+        alert(`Thats it! You find the secret number ${secretNumber}, in ${score} attempts`);
+    }else{
+        alert(`Thats it! You find the secret number ${secretNumber}, in ${score} attempt`);
+    }
+*/
