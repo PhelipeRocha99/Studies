@@ -36,7 +36,9 @@ Variable naming best practices
 */
 
 // JS - let it's to declare variable on javascript, to numbers we do not use quotation Mark so JS can interpert the value as a number and not as a text.
-let secretNumber = parseInt(Math.random() * 100 + 1);
+let numberSize = 5000;
+let secretNumber = parseInt(Math.random() * numberSize + 1);
+console.log(secretNumber);
 
 //JS - prompt it's use to receive information from user.
 let guess;
@@ -45,7 +47,7 @@ let score = 1;
 //at this point i start to use live server extension - to update automatic index.html
 
 while (guess != secretNumber) {
-    guess = prompt("Choose a number from 1 to 100");
+    guess = prompt(`Choose a number from 1 to ${numberSize}`);
     // JS - IF ELSE structue on JS is If(condition){action} Else if(condition){action} else(condition){action}
     if (guess == secretNumber) {
         //JS- This break stop the while loop
