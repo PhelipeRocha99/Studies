@@ -36,7 +36,7 @@ Variable naming best practices
 */
 
 // JS - let it's to declare variable on javascript, to numbers we do not use quotation Mark so JS can interpert the value as a number and not as a text.
-let secretNumber = 5;
+let secretNumber = 9;
 
 //JS - prompt it's use to receive information from user.
 let guess = prompt("Choose a number from 1 to 10");
@@ -46,7 +46,10 @@ let guess = prompt("Choose a number from 1 to 10");
 // JS - IF ELSE structue on JS is If(condition){action} Else if(condition){action} else(condition){action}
 if (guess == secretNumber) {
     //JS - to find out log, in your browse right click on screen and then click on inspect, a tab open on right side of screen click on Console Tab to view message.
-    console.log("That's it! You find the secret number (5)");
+    //JS- Template Strings use `Text go here ${variable} text text and more text` to use variable in text. 
+    alert(`Thats it! You find the secret number ${secretNumber}`);
+} else{
+    alert("Wrong guess!Try again");
 }
 
-
+//at this point i start to use live server extension - to update automati
