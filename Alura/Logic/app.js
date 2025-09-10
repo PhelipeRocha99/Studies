@@ -1,3 +1,5 @@
+let generatedNumbers = [];
+let secretNumberLength = 10;
 let secretNumber = randomNumberGenerator();
 //let secretNumber = 5;
 let attempt = 1;
@@ -17,8 +19,6 @@ welcomeMessage();
 //programming logic - Function must have only one responsability.
 function verifyGuess(){
     let guess = document.querySelector("input").value;
-    console.log(guess == secretNumber);
-
     if (guess == secretNumber) {
         printTextOnScreen("h1","That's right!");
         let attemptWord = guess > 1 ? "attempt" : "attempts";
@@ -39,7 +39,22 @@ function verifyGuess(){
 }
 
 function randomNumberGenerator() {
-    return parseInt(Math.random() * 10 + 1);
+    let randomNumber = parseInt(Math.random() * secretNumberLength + 1);
+    let generatedNumbersLenght = generatedNumbers.length;
+
+    if (generatedNumbersLenght == secretNumberLength) {
+        generatedNumbers = [];
+    }
+
+    //JS - includes function on JS verify if param it's included in array.
+    if (generatedNumbers.includes(randomNumber)) {
+        return randomNumberGenerator();
+    } else{
+        //JS - push function add param to end of array. 
+        generatedNumbers.push(randomNumber);
+        console.log(generatedNumbers);
+        return randomNumber;
+    }
 }
 
 function cleanGuess() {
